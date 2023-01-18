@@ -1,4 +1,5 @@
 @import url(styles/header.css);
+@import url(styles/banner.css);
 
 :root {
     --cor-de-fundo: #ebecee;
@@ -6,6 +7,7 @@
     --laranja: #eb9b00;
     --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326598 165.37%);
     --fonte-principal: "Poppins";
+
 }
 
 body {
