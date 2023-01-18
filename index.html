@@ -7,9 +7,33 @@
     <title>Alura Books</title>
     <link rel="shortcut icon" href="img/Logo.ico">
     <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" name="menu" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a href="#" class="lista-menu__titulo">Categorias</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">PROGRAMAÇÃO</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">FRONT-END</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">INFRAESTRUTURA</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">BUSINESS</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">DESIGN & UX</a></li>
+            </ul>
+            <img src="img/Logo.svg" alt="Logo da alurabooks">
+        </div>
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/Compras.svg" alt="Compras" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Usuário" class="container__imagem"></a>
+        </div>
+    </header>
 </body>
 </html>
