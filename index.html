@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,12 @@
     <link rel="shortcut icon" href="img/Logo.ico">
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="cabecalho">
         <div class="container">
@@ -40,5 +43,42 @@
         <p class="banner__texto">Enconte em nossa estante o que pecisa para seu desenvolvimento!</p>
         <input type="search" name="busca" placeholder="Qual será sua próxima leitura?" class="banner__pesquisa">
     </main>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/livros/Acessibilidade.png" alt="livro de acessibilidade"></div>
+                <div class="swiper-slide"><img src="img/livros/Angular.png" alt="Angular"></div>
+                <div class="swiper-slide"><img src="img/livros/ApacheKafka.png" alt="ApacheKafka"></div>
+                <div class="swiper-slide"><img src="img/livros/Arquitetura.png" alt="Arquitetura"></div>
+                <div class="swiper-slide"><img src="img/livros/Construct2.png" alt="Construct2"></div>
+                <div class="swiper-slide"><img src="img/livros/Gestão.png" alt="Gestão"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 100,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
+
 </html>
