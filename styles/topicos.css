@@ -29,3 +29,13 @@
     text-decoration: none;
     font-size: 14px;
 }
+
+@media screen and (min-width) {
+    .topicos__titulo {
+        font-size: 24px;
+    }
+
+    .topicos__link {
+        font-size: 24px;
+    }
+}
