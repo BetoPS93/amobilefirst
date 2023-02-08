@@ -8,8 +8,12 @@
     padding: 1em 0 0.5em 0;
 }
 
+.swiper-slide {
+    margin-right: 10px;
+}
+
 .swiper-slide img {
-    width: 210%;
+    width: 100%;
 }
 
 .swiper-button-prev, 
@@ -104,6 +108,10 @@
     }
 
     .swiper-slide img {
-        width: auto;
+        width: 100%;
+    }
+
+    .swiper-slide {
+        margin-right: 10px;
     }
 }
